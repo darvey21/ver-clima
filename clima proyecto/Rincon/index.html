@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DONA VIDA</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <h1>DONA VIDA</h1>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#campañas">Campañas</a></li>
+                <li><a href="#mapa">Ubicaciones</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+
+            <button id="darkModeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+            <h2>Dona sangre, salva vidas</h2>
+
+            <p>
+                Encuentra campañas activas y puntos de donación cercanos.
+            </p>
+
+            <button>Donar Ahora</button>
+        </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats">
+
+        <div class="card">
+            <h3>540+</h3>
+            <p>Donaciones este mes</p>
+        </div>
+
+        <div class="card">
+            <h3>12</h3>
+            <p>Campañas activas</p>
+        </div>
+
+        <div class="card">
+            <h3>8</h3>
+            <p>Hospitales asociados</p>
+        </div>
+
+    </section>
+
+    <!-- CAMPAÑAS -->
+    <section id="campañas" class="campaigns">
+
+        <h2>Campañas Activas</h2>
+
+        <div class="campaign-container">
+
+            <div class="campaign-card">
+                <h3>Campaña Universitaria</h3>
+
+                <p>📍 Bogotá</p>
+                <p>📅 25 Mayo</p>
+                <p>🩸 O+</p>
+            </div>
+
+            <div class="campaign-card">
+                <h3>Hospital Central</h3>
+
+                <p>📍 Medellín</p>
+                <p>📅 28 Mayo</p>
+                <p>🩸 A-</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MAPA -->
+    <section id="mapa" class="map-section">
+
+        <h2>Puntos de Donación</h2>
+
+        <div id="map"></div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="registro" class="form-section">
+
+        <h2>Registro de Donantes</h2>
+
+        <form id="donorForm">
+
+            <input type="text" id="name" placeholder="Nombre completo">
+
+            <input type="text" id="bloodType" placeholder="Tipo de sangre">
+
+            <input type="email" id="email" placeholder="Correo">
+
+            <button type="submit">Registrarme</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 DONA VIDA | Proyecto Social</p>
+
+    </footer>
+
+    <!-- LEAFLET -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+
+</body>
+
+</html>
